@@ -12,7 +12,7 @@ const getDataForm = () => {
   }
 };
 
-const Update = () => {
+const AddEmployee = () => {
   const [employees, steEmployees] = useState(getDataForm());
 
   const handleAddEmployee = (e) => {
@@ -98,7 +98,7 @@ const Update = () => {
         <div>
           <h4 className="tittel">Add Employees List</h4>
         </div>
-        {employees.length < 1 && <div>No Employees are Updated yet</div> }
+        {employees.length < 1 && <div> <h6 className="tittel">No Employees are Updated yet</h6></div> }
         {employees.length > 0 && <div>
           <table className="table">
           <thead>
@@ -133,4 +133,4 @@ const Update = () => {
   );
 };
 
-export default Update;
+export default AddEmployee;

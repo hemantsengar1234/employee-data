@@ -3,7 +3,7 @@ import {BrowserRouter, Routes,Route } from 'react-router-dom';
 import Employees from './components/Employees';
 
 import Navbar from "./components/Navbar";
-import Update from './components/AddEmployee';
+import AddEmployee from './components/AddEmployee';
 
 
 
@@ -13,7 +13,7 @@ function App() {
        <Navbar/>
       <Routes>
       <Route path="/" element={<Employees/>}/>
-      <Route path="/addemployes" element={<Update/>}/>
+      <Route path="/addemployees" element={<AddEmployee/>}/>
       </Routes>
     </BrowserRouter>
   );
