@@ -1,0 +1,12 @@
+
+
+.tittel{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+}
