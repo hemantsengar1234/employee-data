@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import "./update.css";
 
 const getDataForm = () => {
-  const list = localStorage.getItem("employees");
+  const list = localStorage.getItem("newemployee");
   if (list) {
     return JSON.parse(list);
   } else {
@@ -38,10 +38,10 @@ const Update = () => {
   const [id, setId] = useState("");
 
   const deleteEmployee=(id)=>{
-    const filteredBooks=employees.filter((element,index)=>{
+    const filteredemployees=employees.filter((element,index)=>{
       return element.id !== id
     })
-    steEmployees(filteredBooks);
+    steEmployees(filteredemployees);
   }
 
   return (
@@ -77,7 +77,7 @@ const Update = () => {
           </div>
           <div className="mb-3">
             <label for="exampleInputPassword1" className="form-label">
-              Last Name
+              ID
             </label>
             <input
               type="lastname"
@@ -118,8 +118,8 @@ const Update = () => {
               <td>{employees.firstName}</td>
               <td>{employees.lastName}</td>
               <td>
-                
-                <button className="btn btn-primary" onClick={()=>deleteEmployee(employees.id)}>Delete</button>
+                <button className="btn btn-primary" 
+                onClick={()=>deleteEmployee(employees.id)}>Delete</button>
               </td>
             </tr>
               ))
@@ -128,7 +128,6 @@ const Update = () => {
         </table>
         </div> }
 
-        
       </div>
     </>
   );
