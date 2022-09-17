@@ -96,7 +96,7 @@ const Update = () => {
 
       <div className="container">
         <div>
-          <h4 className="tittel">Employees List</h4>
+          <h4 className="tittel">Updated Employees List</h4>
         </div>
         {employees.length < 1 && <div>No Employees are Updated yet</div> }
         {employees.length > 0 && <div>
