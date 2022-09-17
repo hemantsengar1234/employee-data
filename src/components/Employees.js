@@ -15,13 +15,14 @@ const Employees = () => {
   const [data, setData] = useState(getDataApi())
 
 
-  // useEffect(() =>{
-  //   fetch("https://api.github.com/users").then((result) =>{
-  //     result.json().then((res) =>{
-  //       setData(res)
-  //     })
-  // })
-  // },[])
+   useEffect(() =>{
+     fetch("https://api.github.com/users").then((result) =>{
+       result.json().then((res) =>{
+         setData(res)
+       })
+      //  console.log("hello")
+   })
+   },[])
   
 
   useEffect(()=>{
