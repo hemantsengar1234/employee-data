@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-import "./update.css";
+import "./addemployee.css";
 
 const getDataForm = () => {
   const list = localStorage.getItem("newemployee");
@@ -47,7 +47,7 @@ const Update = () => {
   return (
     <>
       <div className="container update">
-        <h4>Update Employees List</h4>
+        <h4>Add Employees List</h4>
         <form onSubmit={handleAddEmployee}>
           <div className="mb-3">
             <label for="exampleInputEmail1" className="form-label">
@@ -96,7 +96,7 @@ const Update = () => {
 
       <div className="container">
         <div>
-          <h4 className="tittel">Updated Employees List</h4>
+          <h4 className="tittel">Add Employees List</h4>
         </div>
         {employees.length < 1 && <div>No Employees are Updated yet</div> }
         {employees.length > 0 && <div>

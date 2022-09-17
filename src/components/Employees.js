@@ -20,7 +20,6 @@ const Employees = () => {
        result.json().then((res) =>{
          setData(res)
        })
-      //  console.log("hello")
    })
    },[])
   

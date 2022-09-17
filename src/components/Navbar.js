@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <NavLink className="nav-link active menu " to="/update" > <h5>Update</h5> </NavLink>
+                        <NavLink className="nav-link active menu " to="/addemployes" > <h5>AddEmployee</h5> </NavLink>
                         </li>
                     </ul>
             </div>
