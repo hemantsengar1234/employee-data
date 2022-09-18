@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './employee.css'
-import './addemployee.css'
 
 
 const getDataApi = () => {
@@ -13,6 +12,8 @@ const getDataApi = () => {
 };
 
 const Employees = () => {
+
+
   const [data, setData] = useState(getDataApi())
 
   const [login, setLogIn] = useState("");
@@ -52,7 +53,7 @@ const Employees = () => {
 
 
   return (
-    <div className='container d-flex'>
+    <div className='container main d-flex'>
   <div className='container'>
     <div>
         <h4 className='tittel'>Employees List</h4>
@@ -62,7 +63,6 @@ const Employees = () => {
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
-            <th scope="col">Edit</th>
             <th scope="col">Remove</th>
           </tr>
         </thead>
@@ -72,7 +72,6 @@ const Employees = () => {
           <tr key={id}>
             <th scope="row"> {item.id} </th>
             <td>{item.login}</td>
-            <td>edit</td>
             <td> <button className='btn btn-primary'
             onClick={()=>deleteEmployeeList(item.id)}>Delete</button> </td>
           </tr>

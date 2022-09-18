@@ -10,3 +10,19 @@
     background-color: black;
     color: white;
 }
+
+.box{
+    margin: 50px;
+    width: 60%;
+}
+
+@media (max-width:750px){
+    .box{
+        width: 50%;
+    }
+}
+@media (max-width:430px){
+    .box{
+        width: 70%;
+    }
+}

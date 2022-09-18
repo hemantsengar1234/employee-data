@@ -1,11 +1,21 @@
 .box{
     margin: 50px;
-    width: 30%;
+    width: 60%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width:750px){
     .box{
         width: 50%;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width:430px){

@@ -1,17 +1,18 @@
 import React from 'react'
 import LogIn from './LogIn'
 import SignUp from './SignUp'
+import './home.css'
 
 function Home() {
   return (
-    <div className="container d-flex">
+    <div className="container main" style={{}}>
 
     <div className='container my-3'>
-        <h3>For Resistration  </h3>
+        <h3 className='tittel'>For Resistration  </h3>
       <SignUp/>
     </div>
     <div className='container my-3'>
-        <h3> For Resister User </h3>
+        <h3 className='tittel'> For Resister User </h3>
       <LogIn/>
     </div>
     </div>
