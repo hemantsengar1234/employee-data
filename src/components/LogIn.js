@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function LogIn() {
+
+  const employeeDetails = useNavigate();
+
   const [logDetails, setLogDetails] = useState([])
 
     const [email, setEmail] = useState("");
@@ -8,6 +12,19 @@ function LogIn() {
 
   const handleLogIn = (e) => {
     e.preventDefault();
+    const getuserlog = localStorage.getItem('signup');
+    if(getuserlog && getuserlog.length){
+      const userdata = JSON.parse(getuserlog)
+      const userlogin = userdata.filter((e,k)=>{
+        return e.email === email && e.password === password
+      });
+      if(userlogin.length === 0){
+        alert('invalid details')
+      }else{
+          employeeDetails('/employee')
+      }
+    }
+
     let loginuser = {
         email,
         password

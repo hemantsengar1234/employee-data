@@ -15,15 +15,6 @@ const Navbar = () => {
                   <li className="nav-item">
                   <NavLink className="nav-link active menu " to="/" > Home</NavLink>
                   </li>
-                  <li className="nav-item">
-                  <NavLink className="nav-link active menu " to="/employee" > Employees</NavLink>
-                  </li>
-                  <li className="nav-item dropdown">
-                  <NavLink className="nav-link active menu " to="/login">LogIn</NavLink>
-                  </li>
-                  <li className="nav-item">
-                  <NavLink className="nav-link active menu " to="/signup">SignUp</NavLink>
-                  </li>
                 </ul>
             </div>
         </div>
