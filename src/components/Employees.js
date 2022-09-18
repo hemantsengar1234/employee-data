@@ -62,6 +62,7 @@ const Employees = () => {
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
+            <th scope="col">Edit</th>
             <th scope="col">Remove</th>
           </tr>
         </thead>
@@ -71,6 +72,7 @@ const Employees = () => {
           <tr key={id}>
             <th scope="row"> {item.id} </th>
             <td>{item.login}</td>
+            <td>edit</td>
             <td> <button className='btn btn-primary'
             onClick={()=>deleteEmployeeList(item.id)}>Delete</button> </td>
           </tr>
