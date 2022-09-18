@@ -1,15 +1,15 @@
-.update{
+.box{
     margin: 50px;
     width: 30%;
 }
 
 @media (max-width:750px){
-    .update{
+    .box{
         width: 50%;
     }
 }
 @media (max-width:430px){
-    .update{
+    .box{
         width: 70%;
     }
 }
