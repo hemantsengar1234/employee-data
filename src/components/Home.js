@@ -8,11 +8,11 @@ function Home() {
     <div className="container main" style={{}}>
 
     <div className='container my-3'>
-        <h3 className='tittel'>For Resistration  </h3>
+        <h3 className='tittel'>For Registration  </h3>
       <SignUp/>
     </div>
     <div className='container my-3'>
-        <h3 className='tittel'> Already Resisted User </h3>
+        <h3 className='tittel'> Already Registered User </h3>
       <LogIn/>
     </div>
     </div>
