@@ -12,7 +12,7 @@ function Home() {
       <SignUp/>
     </div>
     <div className='container my-3'>
-        <h3 className='tittel'> For Resister User </h3>
+        <h3 className='tittel'> Already Resisted User </h3>
       <LogIn/>
     </div>
     </div>
