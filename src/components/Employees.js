@@ -85,7 +85,7 @@ const Employees = () => {
         <h4>Add Employees List</h4>
         <form onSubmit={handleAddEmployee}>
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">
+            <label htmlFor="exampleInputEmail1" className="form-label">
              Name
             </label>
             <input
@@ -98,7 +98,7 @@ const Employees = () => {
             />
           </div>
           <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               ID
             </label>
             <input

@@ -43,22 +43,22 @@ function SignUp() {
         <h4>Sign Up</h4>
     <form  onSubmit={handleSignUp} >
         <div className="mb-3">
-            <label for="exampleInputName" className="form-label">Your Name</label>
+            <label htmlFor="exampleInputName" className="form-label">Your Name</label>
             <input type="Name" className="form-control" id="exampleInputName" aria-describedby="nameHelp"
             onChange={(e) => setName(e.target.value)}
             value={name}/>
             <div id="nameHelp" className="form-text">write your vaild name</div>
         </div>
         <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Email address</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <label htmlFor="exampleInputEmail" className="form-label">Email address</label>
+            <input type="email" className="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
             value={email}/>
             <div id="emailHelp" className="form-text">write your vaild email address </div>
         </div>
         <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1"
+            <label htmlFor="exampleInputPassword" className="form-label">Password</label>
+            <input type="current-password" className="form-control" id="exampleInputPassword"
             onChange={(e) => setPassword(e.target.value)}
             value={password}/>
         </div>

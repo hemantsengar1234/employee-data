@@ -42,15 +42,15 @@ function LogIn() {
         <h4>Log In</h4>
     <form onSubmit={handleLogIn} >
         <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Email address</label>
+            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
             value={email}/>
             <div id="emailHelp" className="form-text">write your valid email</div>
         </div>
         <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1"
+            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+            <input type="current-password" className="form-control" id="exampleInputPassword1"
             onChange={(e) => setPassword(e.target.value)}
             value={password}/>
         </div>
